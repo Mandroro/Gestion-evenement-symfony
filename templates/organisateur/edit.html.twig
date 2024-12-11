@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Organisateur{% endblock %}
+
+{% block body %}
+    <h1>Edit Organisateur</h1>
+
+    {{ include('organisateur/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('app_organisateur_index') }}">back to list</a>
+
+    {{ include('organisateur/_delete_form.html.twig') }}
+{% endblock %}
